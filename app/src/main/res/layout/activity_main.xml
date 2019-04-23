@@ -27,22 +27,19 @@
         android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/gobutton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/timerseekBar"
         app:layout_constraintVertical_bias="0.429" />
 
     <Button
         android:id="@+id/gobutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="161dp"
+        android:layout_height="72dp"
         android:layout_marginTop="8dp"
+        android:onClick="bottonclicked"
         android:text="go!"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/timertextview"
-        app:layout_constraintVertical_bias="0.643" />
+        app:layout_constraintTop_toBottomOf="@+id/timertextview" />
 
 </android.support.constraint.ConstraintLayout>

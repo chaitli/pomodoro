@@ -2,10 +2,12 @@ package com.chaitli.myeggtimer;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    Log.i ("button pressed" , "nice!");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
         SeekBar timerseekbar = findViewById(R.id.timerseekBar);
         final TextView timerTextview = findViewById(R.id.timertextview);
 
-        timerseekbar.setMax(600);
-        timerseekbar.setProgress(1500);
+        timerseekbar.setMax(1500);
+        timerseekbar.setProgress(30);
 
         timerseekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
