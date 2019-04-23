@@ -7,7 +7,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Log.i ("button pressed" , "nice!");
+    Log.progress ("button pressed" , "nice!");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
