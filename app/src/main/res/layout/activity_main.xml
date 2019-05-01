@@ -22,24 +22,28 @@
         android:id="@+id/timertextview"
         android:layout_width="209dp"
         android:layout_height="95dp"
-        android:text="    0:30"
+        android:text="25:00"
         android:textColor="@color/colorAccent"
         android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/gobutton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.693"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/timerseekBar"
-        app:layout_constraintVertical_bias="0.429" />
+        app:layout_constraintVertical_bias="0.292"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
         android:id="@+id/gobutton"
         android:layout_width="161dp"
         android:layout_height="72dp"
-        android:layout_marginTop="8dp"
-        android:onClick="bottonclicked"
+        android:onClick="ButtonClicked"
         android:text="go!"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/timertextview" />
+        app:layout_constraintTop_toBottomOf="@+id/timertextview"
+        app:layout_constraintVertical_bias="0.325" />
 
 </android.support.constraint.ConstraintLayout>
